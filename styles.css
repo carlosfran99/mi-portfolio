@@ -142,6 +142,61 @@ h2 {
     text-decoration: underline;
 }
 
+/* Estilos para el mensaje de bienvenida */
+.welcome-message {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.change-name-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.change-name-btn:hover {
+    opacity: 0.9;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para botón de reincio */
+.reset-btn {
+    background-color: #e90000; /* Rojo para indicar acción destructiva */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.reset-btn:hover {
+    opacity: 0.9;
+}
+
 /* Pie de página */
 footer {
     margin-top: 2rem;
